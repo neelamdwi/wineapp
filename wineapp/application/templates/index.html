@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Quality</title>
+ </head>
+<body>
+        <h2>Welcome to Wine App</h2>
+        <h3>Enter values of your Wine</h3>
+        <form name="wineform" id="wineform" action = "{{ url_for('wineregress') }}" method="POST">
+            <table>
+                <tr>
+                    <th><h4>Fixed acidity</h4> </th>
+                    <td> <input type="text" name="fixed_acidity" > </td>               
+                    <td><h4>Volatile acidity</h4></td>
+                    <td><input type="text" name="volatile_acidity" > </td>
+                    <td><h4>Citric acid</h4></td>
+                    <td><input type="text" name="citric_acid" > </td>               
+                    <td><h4>Residual sugar</h4></td>
+                    <td><input type="text" name="residual_sugar"  > </td>
+                </tr>
+                <tr>
+                    <td><h4>Chlorides</h4></td>
+                    <td><input type="text" name="chlorides" > </td>              
+                    <td><h4>Free sulfur dioxide</h4></td>
+                    <td><input type="text" name="free_sulfur_dioxide"  > </td>               
+                    <td><h4>Total sulfur dioxide</h4></td>
+                    <td><input type="text" name="total_sulfur_dioxide" > </td>               
+                    <td><h4>Density</h4></td>
+                    <td><input type="text" name="density"  > </td>
+                </tr>
+                <tr>
+                    <td><h4>pH</h4></td>
+                    <td><input type="text" name="pH" > </td>           
+                    <td><h4>Sulphates</h4></td>
+                    <td><input type="text" name="sulphates"  > </td>
+                    <td><h4>Alcohol</h4></td>
+                    <td><input type="text" name="alcohol" > </td>           
+                    
+                </tr>
+            </table>
+            <input type="hidden" id="forminput" name="forminput"  >            
+            <p><input type="submit" value="Rate the Quality"></p>
+            
+            <p>Quality is : {{ results }} out of 10 </p>
+            
+        </form>
+</body>
+</html>
