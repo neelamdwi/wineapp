@@ -24,7 +24,7 @@ def wineregress():
     alcohol = request.form.get("alcohol")
 
     #url for wineratingservice
-    url = "https://winerating-app.herokuapp.com/api"
+    url = "https://wineratingservice-app.herokuapp.com/api"
 
     #create json from form inputs
     data = json.dumps({"fixed_acidity": fixed_acidity, "volatile_acidity": volatile_acidity, "citric_acid": citric_acid, "residual_sugar": residual_sugar, "chlorides": chlorides, "free_sulfur_dioxide": free_sulfur_dioxide, "total_sulfur_dioxide": total_sulfur_dioxide, "density": density, "pH": pH, "sulphates": sulphates, "alcohol": alcohol })
