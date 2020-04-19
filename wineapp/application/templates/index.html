@@ -40,12 +40,10 @@
             </table>
             <input type="hidden" id="forminput" name="forminput"  >            
             <p><input type="submit" value="Rate the Quality"></p>
-            
-            <h3>Quality rating: 
-                {% if (results) %} 
-                    {{ results }}  
-                {% endif %}</h3>
-            
+             {% if (results) %} 
+             <h3> 
+             Quality rating: {{ results }}  </h3>
+             {% endif %}
         </form>
 </body>
 </html>
